@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>Password Generator</title>
+    
+	<link rel="stylesheet" href="css/PassGenStyle.css">
+	
+
+</head>
+
+<body>
+
+	<div class="container">
+       <form name="passGenForm" action="">
+       <div class="row">
+            <div class="col-sm-9">
+                <input type="button" value="Password size" class="size btn">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" name="input" id="" value="5" class="input">
+            </div>
+        </div>    
+        <div class="row">
+           <div class="col-sm-12">
+                <input class=" btn-block btn-lg btnPasswordGen" type="button" value="Generate Password" onclick="generatePassword(this.form.input.value)">
+            </div>
+            <div class="col-sm-12 output">
+                <input type="text" name="output" id="" class="out">
+            </div>
+        </div>    
+        
+        </form>
+	</div>
+	
+	<div id="sample">
+	    
+	</div>
+    
+    <script src="script/PassGenScript.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+
+</body>
+
+</html>
