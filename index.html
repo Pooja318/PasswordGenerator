@@ -19,12 +19,25 @@
        <form name="passGenForm" action="">
        <div class="row">
             <div class="col-sm-9">
-                <input type="button" value="Password size" class="size btn">
+                <input type="button" value="Password Size" class="size btn">
             </div>
             <div class="col-sm-3">
                 <input type="text" name="input" id="" value="5" class="input">
             </div>
-        </div>    
+        </div> 
+        
+        <div class="row">
+           <div class="col-sm-9">
+               <input type="button" value="Password Types" class="size btn type">
+           </div>
+           <div class="col-sm-3">
+               <input type="checkbox" name="capletters" id="capletters"> <span>Capital Letters</span>  <br>
+               <input type="checkbox" name="smletters" id="smletters"> <span>Small Letters</span> <br>
+               <input type="checkbox" name="num" id="num"> <span>Numbers</span> <br>
+               <input type="checkbox" name="specChar" id="specChar"> <span>Special Characters</span> <br>
+           </div>            
+        </div>
+              
         <div class="row">
            <div class="col-sm-12">
                 <input class=" btn-block btn-lg btnPasswordGen" type="button" value="Generate Password" onclick="generatePassword(this.form.input.value)">
